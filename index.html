@@ -3,91 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>My Landing Page</title>
+    <title>Weather <Applet></Applet></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    <section class="showcase">
-        <div class="video-container">
-            <video src="/media/Epic_Clouds_H264_Videvo.mp4" autoplay muted loop></video>
+    <div class="main-container">
+        <div class="container top">
+            <h1>Weather App</h1>
+            <form action="" onsubmit="return false">
+                <input type="text" class="search" placeholder="Search by city name">
+                <button type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">New York, US</div>
+                        <div class="date">Thursday, Dec 26 2020</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp: 25 <span>°C</span></div>
+                        <div class="weather">Weather: Sunny</div>
+                        <div class="temp-range">Temp Range: 10°C / 15°C</div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="content">
-            <h1>Silver Lining</h1>
-            <h3>Personal Portfolio site</h3>
-            <a href="#about" class="btn">About</a>
-        </div>
-    </section>
+    </div>
 
-    <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="https://jp-project-site.000webhostapp.com/Weather_app/weather.html">Weather App (work-in-progress)</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/1FuDD2JN9zA">Video Editing</a>
-          </li>
-          <li> 
-              <a href="https://gingerbread-c8d3bai.netlify.app">Project site</a>
-            </li>
-            <li>
-            <a href="https://jperkinsphoto.com/">Photography</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    <section id="about">
-        <h1>About</h1>
-        <p>
-            This is a work in progress.  The plan is to get better at front end web design.  It is amazing what you can do with HTML5 and CSS3 these days.
-        </p>
- 
-        <h2>Follow Me On Social Media</h2>
-
-        <div class="social">
-            <a href="https://www.behance.net/Jperkins2376/" target="_blank">
-                <i class="fab fa-behance fa-3x"></i>
-            </a>
-            <a href="https://jperkinsphoto.com/" target="_blank">
-                <i class="fa fa-camera-retro fa-3x"></i>
-            </a>
-            <a href="https://github.com/jperkins2376" target="_blank">
-                <i class="fab fa-github fa-3x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/joshua-perkins-a062624/" target="_blank">
-                <i class="fab fa-linkedin fa-3x"></i>
-            </a>
-            <a href="https://dribbble.com/Jperkins_create" target="_blank">
-                <i class= "fab fa-dribbble fa-3x"></i>
-            </a>
-        
-      
-        </div>
-  
-    </section>
-  
+<script src="app.js"></script>
 </body>
 </html>
